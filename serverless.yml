@@ -1,0 +1,10 @@
+service: fire-layer
+
+provider:
+  name: aws
+  region: us-east-1
+  profile: utransporter
+
+layers:
+  fire-layer:
+    path: npm_deps
