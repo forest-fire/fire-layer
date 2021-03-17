@@ -1,6 +1,6 @@
 {
   "name": "npm_deps",
-  "version": "0.58.0",
+  "version": "0.58.1",
   "description": "this is just meant as a way to isolate the deps which the layer shared and not mix it with dev-deps we're using in the repo",
   "main": "index.js",
   "scripts": {
