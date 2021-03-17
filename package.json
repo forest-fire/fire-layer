@@ -1,16 +1,16 @@
 {
   "name": "@forest-fire/fire-layer",
-  "version": "0.58.0",
+  "version": "0.58.1",
   "description": "An AWS layer which includes a strong baseline of requirements for users who use Firemodel and Universal-Fire",
   "main": "dist/index.js",
   "files": [
-    "npm_deps/node_modules",
+    "npm_deps/nodejs/node_modules",
     "dist"
   ],
   "scripts": {
-    "clean": "rimraf npm_deps/node_modules/*",
+    "clean": "rimraf npm_deps/nodejs/node_modules/*",
     "build": "run-s clean build:install",
-    "build:install": "cd npm_deps && npm install && npm ls firemodel && npm ls universal-fire && npm ls firemock && cd ..",
+    "build:install": "cd npm_deps/nodejs && npm install && npm ls firemodel && npm ls universal-fire && npm ls firemock && cd ../..",
     "deploy": "run-s build deploy:serverless",
     "deploy:serverless": "sls deploy"
   },
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/forest-fire/fire-layer#readme",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "serverless": "^2.28.6"
   }
