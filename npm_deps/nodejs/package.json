@@ -1,6 +1,6 @@
 {
   "name": "npm_deps",
-  "version": "0.58.1",
+  "version": "0.59.0",
   "description": "this is just meant as a way to isolate the deps which the layer shared and not mix it with dev-deps we're using in the repo",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firemock": "^0.58.0",
-    "firemodel": "^0.58.0",
-    "universal-fire": "^0.58.0"
+    "firemock": "^0.59.0",
+    "firemodel": "^0.59.0",
+    "universal-fire": "^0.59.0"
   },
   "volta": {
     "node": "14.16.0"
