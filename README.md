@@ -10,6 +10,16 @@ This repo produces a AWS Layer which includes the baseline of requirements that'
 
 Your Lambda functions which include this layer will find these top level dependencies along with their dependency graphs are what you will find in this layer in the `/opt/node_modules` filesystem. In order for your functions import statements to properly resolve this path you will need to ensure that the `NODE_PATH` ENV variable is set to include the mount directory above. 
 
+### Versions mapping 
+The following table would describes the package version that each version of `fire-layer` released contains:
+
+|AWS layer version | fire-layer | firemodel | universal-fire | firemock |
+| :--------------: |:----------:|:---------:|:--------------:|:--------:|
+| 1                |   0.58.0   |  0.58.0   |      0.58.0    |  0.58.0  |
+| 2                |   0.58.1   |  0.58.0   |      0.58.0    |  0.58.0  |
+| 3                |   0.59.0   |  0.59.0   |      0.59.0    |  0.59.0  |
+
+
 ### Serverless Framework
 
 If you are using the serverless framework, you'd simply add something like the following to your `serverless.yaml` file:
