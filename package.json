@@ -1,6 +1,6 @@
 {
   "name": "@forest-fire/fire-layer",
-  "version": "0.58.1",
+  "version": "0.59.0",
   "description": "An AWS layer which includes a strong baseline of requirements for users who use Firemodel and Universal-Fire",
   "main": "dist/index.js",
   "files": [
